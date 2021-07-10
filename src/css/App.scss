@@ -1,0 +1,39 @@
+.activeNav {
+  font-weight: bold;
+  border-bottom: 2px solid #4C6E9A;
+}
+
+.hideTablet {
+  @media screen and (min-width: 843px) {
+    display: none;
+  }
+}
+
+.hideMobile {
+  @media screen and (max-width: 843px) {
+    display: none;
+  }
+}
+
+// Overwrite default react-scroll Link component styles
+.mobileHeaderLogoLink {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+  background: #f8f8f8;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.desktopHeaderLogoLink {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-right: 20px;
+  cursor: pointer;
+}
